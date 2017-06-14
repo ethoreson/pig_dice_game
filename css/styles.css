@@ -1,0 +1,42 @@
+#player1css {
+  background-color: #92b9fc;
+}
+
+#player2css {
+  background-color: #d86e6e;
+}
+
+.player1buttonclass, .player2buttonclass {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#rollbutton1, #stopbutton1 {
+  border: 2px solid #92b9fc;
+}
+
+#rollbutton2, #stopbutton2 {
+  border: 2px solid #d86e6e;
+}
+
+#lightblue {
+  background-color: #d8e7ff;
+}
+
+#lightred {
+  background-color: #ffd6ce;
+}
+
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+
+h4 {
+  font-size: 4em;
+}
+
+h5 {
+  font-size: 20px;
+}

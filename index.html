@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pig Dice Game</h1>
+      <p>How to Play:</p>
+      <ul>
+        <li>Enter your names.</li>
+        <li>If it is your turn, click the 'roll' button to begin.</li>
+        <li>At any point, you may choose to 'stop' and collect your 'round tally' points.</li>
+        <li>If you roll a 1, your turn is over and you collect no points.</li>
+        <li>The first player to 50 total points wins!</li>
+      </ul>
+      <div class="row" id="hidethis">
+      <div class="nameform">
+        <form id="form-players-names">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input id="player1name" type="text" class="form-control" placeholder="Player 1, please enter your name">
+                      <span class="input-group-btn">
+                        <button id="player1enter" class="btn btn-secondary" type="button">Submit</button>
+                      </span>
+              </input>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input id="player2name" type="text" class="form-control" placeholder="Player 2, please enter your name">
+                      <span class="input-group-btn">
+                        <button id="player2enter" class="btn btn-secondary" type="button">Submit</button>
+                      </span>
+              </input>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+      <div class="row">
+          <div class="col-lg-6" id="player1css">
+            <h2>Player 1</h2>
+            <p id="1name"></p>
+            <p id="1roundtally"></p>
+            <p id="1total"></p>
+          </div>
+
+          <div class="col-lg-6" id="player2css">
+            <h2>Player 2</h2>
+            <p id="2name"></p>
+            <p id="2roundtally"></p>
+            <p id="2total"></p>
+          </div>
+      </div>
+
+
+    <div class="row">
+      <div class="col-lg-6" id="lightblue">
+        <div class="rolled-dice1" id="centerthis">
+        </div>
+      </div>
+      <div class="col-lg-6" id="lightred">
+        <div class="rolled-dice2" id="centerthis">
+        </div>
+      </div>
+    </div>
+
+
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="player1buttonclass">
+        <button id="rollbutton1" class="btn btn-lg" type="submit">ROLL</button>
+        <button id="stopbutton1" class="btn btn-lg" type="submit">STOP</button>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="player2buttonclass">
+        <button id="rollbutton2" class="btn btn-lg" type="submit">ROLL</button>
+        <button id="stopbutton2" class="btn btn-lg" type="submit">STOP</button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </body>
+</html>
